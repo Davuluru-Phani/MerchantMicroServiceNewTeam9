@@ -6,11 +6,11 @@ import lombok.Setter;
 @Getter @Setter
 public class MerchantDTO {
 
-    private String merchEmail;
-    private String merchPassword;
-    private String merchName;
-    private String merchAddress;
-    private String merchImgUrl;
-   // private String merchLastLogin;
+    private String merchantEmail;
+    private String merchantPassword;
+    private String merchantName;
+    private String merchantImgUrl;
+    private String merchantAddress;
+    private String merchantLastLogin;
 
 }

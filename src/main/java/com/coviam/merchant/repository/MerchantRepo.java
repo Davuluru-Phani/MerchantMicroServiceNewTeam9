@@ -9,5 +9,5 @@ import com.coviam.merchant.entity.Merchant;
 public interface MerchantRepo extends CrudRepository<Merchant,String> {
 
 
-
+    Merchant findByMerchantEmail(String merchantEmail);
 }

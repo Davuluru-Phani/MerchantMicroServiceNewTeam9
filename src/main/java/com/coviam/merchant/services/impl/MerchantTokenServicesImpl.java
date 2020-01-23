@@ -18,7 +18,7 @@ public class MerchantTokenServicesImpl implements MerchantTokenServices {
         UUID uuid=UUID.randomUUID();
         MerchantToken merchantToken=new MerchantToken();
         merchantToken.setUuid(uuid.toString());
-        merchantToken.setMerchEmail(email);
+        merchantToken.setMerchantEmail(email);
         merchantTokenRepo.save(merchantToken);
         System.out.println(merchantToken.toString());
         return merchantToken;

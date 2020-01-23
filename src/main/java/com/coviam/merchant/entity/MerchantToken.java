@@ -14,6 +14,6 @@ public class MerchantToken {
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private String uuid;
-    private String merchEmail;
+    private String merchantEmail;
 
 }

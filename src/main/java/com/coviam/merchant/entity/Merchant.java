@@ -10,15 +10,14 @@ import javax.persistence.Table;
 @Getter
 @Setter
 @Entity
-@Table(name = "merch_table")
 public class Merchant {
 
     @Id
-    private String merchEmail;
-    private String merchPassword;
-    private String merchName;
-    private String merchAddress;
-    private String merchImgUrl;
-   // private String merchLastLogin;
+    private String merchantEmail;
+    private String merchantPassword;
+    private String merchantName;
+    private String merchantAddress;
+    private String merchantImgUrl;
+    private String merchantLastLogin;
 
 }
