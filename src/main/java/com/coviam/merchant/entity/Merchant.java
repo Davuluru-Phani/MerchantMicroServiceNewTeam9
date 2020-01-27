@@ -19,5 +19,6 @@ public class Merchant {
     private String merchantAddress;
     private String merchantImgUrl;
     private String merchantLastLogin;
+    private double merchantRating;
 
 }

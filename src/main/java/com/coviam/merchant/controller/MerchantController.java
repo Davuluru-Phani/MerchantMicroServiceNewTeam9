@@ -69,8 +69,8 @@ public class MerchantController {
     }
 
     @GetMapping(path = "/getName/{merchantId}")
-    public ResponseEntity<String> getMerchantName(@PathVariable(name = "merchantId") String merchanId) {
-        return new ResponseEntity<String>(merchServices.getName(merchanId), HttpStatus.OK);
+    public ResponseEntity<Merchant> getMerchantName(@PathVariable(name = "merchantId") String merchantId) {
+        return new ResponseEntity<Merchant>(merchServices.getName(merchantId), HttpStatus.OK);
     }
 
 

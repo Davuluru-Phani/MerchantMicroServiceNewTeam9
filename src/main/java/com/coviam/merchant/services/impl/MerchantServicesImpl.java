@@ -55,13 +55,13 @@ public class MerchantServicesImpl implements MerchantServices {
     }
 
     @Override
-    public String getName(String merchanId) {
-        final Optional<Merchant> byId = merchRepo.findById(merchanId);
+    public Merchant getName(String merchantId) {
+        final Optional<Merchant> byId = merchRepo.findById(merchantId);
         String merchantName = null;
         if (byId.isPresent()) {
-            merchantName = byId.get().getMerchantName();
+            return byId.get();
         }
-        return merchantName;
+        return null;
     }
 }
 

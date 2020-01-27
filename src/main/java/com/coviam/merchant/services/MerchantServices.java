@@ -10,5 +10,5 @@ public interface MerchantServices {
 
     LoginDetailsDTO checkLoginDetails(MerchantLoginDTO userLogin);
 
-    String getName(String merchanId);
+    Merchant getName(String merchantId);
 }
